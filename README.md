@@ -60,11 +60,14 @@ Overall, this project demonstrates a complete machine learning workflow, includi
 
 Evaluated on the held-out test set:
 
-| Task                          | Metric   | Score |
-| ------------------------------ | -------- | ----- |
-| Survival Event (`survival`)    | Accuracy | 0.886 |
-| Treatment Response (`response`)| Accuracy | 0.882 |
-| Severe Toxicity (`toxicity`)   | Accuracy | 0.888 |
+| Task                             | Accuracy | Loss   |
+| --------------------------------- | -------- | ------ |
+| Survival Event (`survival`)       | 0.886    | 0.252  |
+| Treatment Response (`response`)   | 0.882    | 0.321  |
+| Severe Toxicity (`toxicity`)      | 0.888    | 0.241  |
+| **Total (weighted)**              | —        | **1.134** |
+
+> The total loss is the weighted sum of the three head losses (`response` weighted 2×, `survival` and `toxicity` weighted 1×), as defined by `loss_weights` at compile time.
 
 ## 🖥️ GUI Layout
 
