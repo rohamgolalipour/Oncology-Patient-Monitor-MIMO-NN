@@ -109,7 +109,3 @@ Clicking **PREDICT** runs the trained model on the entered values and displays t
 - The dataset used in this project is **synthetically generated** for demonstration purposes and does not reflect real-world clinical or oncology data.
 - This project was built as a learning exercise to practice an end-to-end machine learning workflow: data generation → data-quality injection and cleaning → multi-branch preprocessing → multi-input/multi-output model training → evaluation → persistence → deployment.
 - Predictions from this tool are statistical estimates only and are **not** a substitute for professional medical diagnosis or clinical decision-making.
-
-## 🎓 About
-
-This project was built as the **final project of a Machine Learning course** at **Uni Brain**, under the instruction of **Mehrshad Eisaei**.
